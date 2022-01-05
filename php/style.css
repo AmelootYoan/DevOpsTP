@@ -1,0 +1,14 @@
+html{
+    margin-top : 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-image : url("./images/fond_cochonou.jpg");
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 25px;
+}
+
