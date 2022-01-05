@@ -1,4 +1,4 @@
-FROM php:7.1-apache-buster
+FROM php:7.1.33
 
 RUN cp "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
