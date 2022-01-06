@@ -7,9 +7,7 @@ RUN cp "$PHP_INI_DIR/php.ini-development" ". / configure--with - pdo - odbc = ib
 RUN docker-php-ext-install mysqli pdo pdo_mysql pdo_pgsql pdo_odbc
 
 
-COPY html  /var/www/html/
+COPY php  /var/www/html/
+COPY config/php.ini /usr/local/etc/php/php.ini
 
-RUN apt-get -y install unixodbc-dev
-RUN pecl install sqlsrv pdo_sqlsrv
 
-COPY php.ini /usr/local/etc/php/

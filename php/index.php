@@ -37,11 +37,12 @@
             originaire d'Amérique latine.</p>
 
         <?php
-            $saucisse = phpinfo();
+            #$saucisse = phpinfo();
             #echo $saucisse;
             try {
-                $base = new PDO('mysql:host=mysql;dbname=bdd;charset=UTF8;', 'root', getenv('MYSQL_ROOT_PASSWORD'));
+                $base = new PDO('mysql:host=mysql;dbname=bdd;charset=UTF8;', 'devuser', getenv('MYSQL_ROOT_PASSWORD'));
             } catch(exception $e) {
+                echo $e;
                 die('Erreur '.$e->getMessage());
             }
             // recupération du nom du chat
@@ -53,6 +54,7 @@
                 $description = $data['description'];
                 $image = $data['image'];
             }
+            
             echo $id;
             echo $nom;
             echo $description;
