@@ -30,6 +30,10 @@ CREATE TABLE IF NOT EXISTS `mydb`.`table1` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
+INSERT INTO table1 VALUES (100, "Saucisson aux noisettes", "Un saucisson mais avec des noisettes", "l'url doit êtr mis ici");
+INSERT INTO table1 VALUES (2, "Saucisson aux cêpes", "Un saucisson mais avec des cêpes", "l'url doit êtr mis ici");
+INSERT INTO table1 VALUES (3, "Saucisson aux beaufort", "Un saucisson mais avec des fromage alpin", "l'url doit êtr mis ici");
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

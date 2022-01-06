@@ -36,6 +36,31 @@
             régionale (les Corses élèvent des ânes mais n'en mangent pas), mais est un saucisson de cochon industriel contenant entre 5 et 20 % de viande d'âne ou de mule 
             originaire d'Amérique latine.</p>
 
+        <?php
+            $saucisse = phpinfo();
+            #echo $saucisse;
+            try {
+                $base = new PDO('mysql:host=mysql;dbname=bdd;charset=UTF8;', 'root', getenv('MYSQL_ROOT_PASSWORD'));
+            } catch(exception $e) {
+                die('Erreur '.$e->getMessage());
+            }
+            // recupération du nom du chat
+            $base->exec("SET CHARACTER SET utf8");
+            $res = $base->query('SELECT * FROM table1');
+            if ($data = $res->fetch()) {
+                $id = $data['id'];
+                $nom = $data['nom'];
+                $description = $data['description'];
+                $image = $data['image'];
+            }
+            echo $id;
+            echo $nom;
+            echo $description;
+            echo $image;
+
+
+        ?>
+
     </body>
 
 </html>
