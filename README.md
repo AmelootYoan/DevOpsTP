@@ -1,7 +1,7 @@
 # Compte-Rendu du projet de DevOps
-# Étudiants : 
-#        JACQUET Virgile
-#        AMELOOT Yoan
+## Étudiants : 
+###        JACQUET Virgile
+###        AMELOOT Yoan
 
 # Ce qui a été fait : 
 
